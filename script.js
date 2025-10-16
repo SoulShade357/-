@@ -13,12 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }, index * 50);
     });
 
-    // При клике на ячейку — показываем подсказку (можно расширить)
-    cells.forEach(cell => {
-        cell.addEventListener('click', () => {
-            const category = cell.dataset.category;
-            alert(`Ты выбрал категорию: ${category}`);
-            // Здесь можно добавить модальное окно с описанием!
-        });
+// При клике на ячейку — показываем личный ответ
+cells.forEach(cell => {
+    cell.addEventListener('click', () => {
+        const answer = cell.dataset.answer;
+        alert(answer); // или более красивый способ вывода
     });
 });
