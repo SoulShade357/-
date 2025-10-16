@@ -16,6 +16,51 @@ body {
     position: relative;
 }
 
+/* Общая карточка секции */
+.card {
+    background: rgba(10, 15, 30, 0.4);
+    border: 1px solid rgba(78, 205, 196, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+    color: #4ecdc4;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.card p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* Навигация по разделам */
+.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 40px;
+    justify-content: center;
+}
+
+.toc a {
+    color: #a8e6cf;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid rgba(78, 205, 196, 0.4);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.toc a:hover {
+    background: rgba(78, 205, 196, 0.1);
+    color: white;
+}
+
 /* Анимированные звёзды */
 body::before {
     content: '';
@@ -119,8 +164,8 @@ h1 {
 }
 
 .cell-large {
-    grid-column: span 2;
-    grid-row: span 2;
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
 }
 
 /* Для мобильных устройств */
@@ -132,4 +177,35 @@ h1 {
         grid-column: span 3;
         grid-row: span 1;
     }
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background: rgba(10, 15, 30, 0.7);
+    color: #4ecdc4;
+    border: 1px solid rgba(78, 205, 196, 0.4);
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+    z-index: 100;
+}
+
+#back-to-top:hover {
+    background: rgba(78, 205, 196, 0.15);
+    color: white;
+    transform: translateY(-2px);
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
 }
