@@ -6,7 +6,7 @@
 
 body {
     background: #000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Century Schoolbook", "Times New Roman", Times, serif;
     color: #fff;
     background-image: 
         radial-gradient(ellipse at 20% 30%, rgba(255,255,255,0.1) 0%, transparent 20%),
@@ -14,6 +14,7 @@ body {
         linear-gradient(to bottom, #000, #111);
     overflow-x: hidden;
     position: relative;
+    line-height: 1.6;
 }
 
 /* Общая карточка секции */
@@ -208,4 +209,7 @@ h1 {
 #back-to-top.show {
     opacity: 1;
     visibility: visible;
+}
+h1, h2 {
+    font-weight: 600; /* или 700, если выглядит слишком тонко */
 }
