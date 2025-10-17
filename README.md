@@ -1,0 +1,3 @@
+Hello there, dear User ^^
+Welcome to kind of an information stand for my original characrer. Here you wiil get acknowledge with general things about him. Enjoy your time staying here! Hope you'll like it <3
+To be homest, I'm doing this in oreder to practice my programming skills as a newbie and at the same time organise somewhat like title list for my persona. If you found this project purely by chance, so you're lucky, he-heh...
